@@ -26,3 +26,16 @@ h1, p{
   font-weight: 200;
   font-style: italic;
 }
+
+#survey-form{
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 700px;
+    width: 60vw;
+    min-width: 400px;
+    background-color: rgba(66, 21, 82, 0.4);
+}
+
+input{
+    display: block;
+}
