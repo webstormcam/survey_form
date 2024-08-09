@@ -71,7 +71,7 @@ label{
     
 }
 
-input[type="radio"]{
+input[type="radio"],input[type="checkbox"]{
     width: auto;
     vertical-align: middle;
     display: inline;
@@ -80,4 +80,8 @@ input[type="radio"]{
 
 .text-callout{
     text-align: left;
+}
+
+textarea{
+    width: 100%;
 }
