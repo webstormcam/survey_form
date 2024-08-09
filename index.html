@@ -15,7 +15,10 @@
         <p id="description">Thank you for taking the time to help us improve the platform</p>
         <form id="survey-form" action="POST">
             <fieldset>
-                <label for="name">Name:<input type="text"></label>
+                <label for="name">Name<input id="name" type="text" required placeholder="Enter your name"></label>
+                <label for="email">Email<input id="email" type="email" required placeholder="Enter your email"></label>
+                <label for="age">Age (Optional)<input id="age" type="number" min="10" max="110"></label>
+                <label for="email">Email<input id="email" type="email"></label>
             </fieldset>
         </form>
     </main>
