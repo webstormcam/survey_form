@@ -6,10 +6,22 @@ body{
     font-family: "Poppins", sans-serif;
     background-image: url("imgs/people_in_office.jpg");
     background-repeat:no-repeat;
-   box-shadow: inset 0 0 0 50vmin rgba(35, 29, 103, 0.473);
     margin: 0;
     padding: 3rem 0rem;
+    position: relative;
 }
+
+body:after{
+    position:fixed;
+    content:"";
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(164, 164, 187, 0.5);
+    z-index:-1;
+}
+
 
 h1, p{
     text-align: center;
@@ -34,21 +46,38 @@ h1, p{
     max-width: 700px;
     width: 60vw;
     min-width: 400px;
-    background-color: rgba(66, 21, 82, 0.4);
+    background-color: rgba(3, 3, 42, 0.723);
 }
 
 
 
-input{
+input,select{
     display: block;
     width: 100%;
     height: 2rem;
     margin: 0.5rem 0rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    font-family: "Poppins", sans-serif;
 }
+
 
 label{
     
     color: white;
     font-size: 1.1rem;
     
+}
+
+input[type="radio"]{
+    width: auto;
+    vertical-align: middle;
+    display: inline;
+    transform: scale(1.2); 
+}
+
+.text-callout{
+    text-align: left;
 }
