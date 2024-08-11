@@ -15,9 +15,9 @@
         <p id="description">Thank you for taking the time to help us improve the platform</p>
         <form id="survey-form" action="POST">
             <fieldset>
-                <label for="name">Name<input id="name" type="text" required placeholder="Enter your name"></label>
-                <label for="email">Email<input id="email" type="email" required placeholder="Enter your email"></label>
-                <label for="age">Age (Optional)<input id="age" type="number" min="10" max="110" placeholder="Age"></label>
+                <label id="name-label" for="name">Name<input id="name" type="text" required placeholder="Enter your name"></label>
+                <label id="email-label" for="email">Email<input id="email" type="email" required placeholder="Enter your email"></label>
+                <label id="number-label" for="age">Age (Optional)<input id="age" type="number" min="10" max="110" placeholder="Age"></label>
                 <label for="drop-down">Which option best describes your current role?<select name="drop-down" id="drop-down" required>
                     <option disabled selected value="option">Select Current Role</option>
                     <option value="student">Student</option>
@@ -52,19 +52,19 @@
                 <fieldset>
                     <p class="text-callout">What would you like to see improved? (Check all that apply)</p>
                     <div>
-                        <input type="checkbox" id="FEP" name="FEP"  /><label for="FEP"> Front-end Projects</label>
+                        <input type="checkbox" id="FEP" name="FEP" value="FEP"  /><label for="FEP"> Front-end Projects</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="BEP" name="BEP"  /><label for="BEP"> Back-end Projects</label>
+                        <input type="checkbox" id="BEP" name="BEP" value="BEP"  /><label for="BEP"> Back-end Projects</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="DV" name="DV"  /><label for="DV"> Data Visualization</label>
+                        <input type="checkbox" id="DV" name="DV" value="DV" /><label for="DV"> Data Visualization</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="C" name="C"  /><label for="C"> Challenges</label>
+                        <input type="checkbox" id="C" name="C" value="C"  /><label for="C"> Challenges</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="OSC" name="OSC"  /><label for="OSC"> Open Source Community</label>
+                        <input type="checkbox" id="OSC" name="OSC" value="OSC"  /><label for="OSC"> Open Source Community</label>
                     </div>
                    
                 </fieldset>
@@ -72,7 +72,9 @@
                     <p class="text-callout">Any comments or suggestions?</p>
                     <textarea rows="4" name="" id=""></textarea>
                 </fieldset>
-                <fieldset><input type="submit"></fieldset>
+                <fieldset>
+                    <input id="submit" type="submit">
+                </fieldset>
         </form>
     </main>
 </body>
